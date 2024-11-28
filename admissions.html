@@ -1,0 +1,454 @@
+<html><head><base href="/about/academics/admissions"><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Vanguard Public School & College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a4b84;
+            --secondary-color: #e63946;
+            --accent-color: #f1faee;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+            padding: 1rem;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(26,75,132,0.9), rgba(26,75,132,0.9)),
+                        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3') center/cover;
+            color: white;
+            padding: 100px 0 50px;
+            text-align: center;
+        }
+
+        .admission-step {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .admission-step:hover {
+            transform: translateY(-5px);
+        }
+
+        .step-number {
+            background: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .requirements-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .requirements-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+
+        .requirements-list li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+
+        .fee-table {
+            width: 100%;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .fee-table th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+        }
+
+        .fee-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .application-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #123456;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .timeline-date {
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 3rem 0;
+            margin-top: 50px;
+        }
+
+        .social-links a {
+            color: white;
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">VPSC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/academics.html">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4">Admissions</h1>
+            <p class="lead">Join Our Community of Excellence</p>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Admission Process</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="admission-step">
+                        <div class="step-number">1</div>
+                        <h4>Application Submission</h4>
+                        <p>Complete and submit the online application form along with required documents.</p>
+                        <ul class="requirements-list">
+                            <li><i class="fas fa-check"></i> Application Form</li>
+                            <li><i class="fas fa-check"></i> Previous Academic Records</li>
+                            <li><i class="fas fa-check"></i> Birth Certificate</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="admission-step">
+                        <div class="step-number">2</div>
+                        <h4>Entrance Test</h4>
+                        <p>Appear for the entrance test in core subjects based on the applying grade level.</p>
+                        <ul class="requirements-list">
+                            <li><i class="fas fa-check"></i> English</li>
+                            <li><i class="fas fa-check"></i> Mathematics</li>
+                            <li><i class="fas fa-check"></i> Science (For Grade 6+)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="admission-step">
+                        <div class="step-number">3</div>
+                        <h4>Interview & Enrollment</h4>
+                        <p>Successful candidates will be called for an interview followed by enrollment.</p>
+                        <ul class="requirements-list">
+                            <li><i class="fas fa-check"></i> Parent Interview</li>
+                            <li><i class="fas fa-check"></i> Fee Payment</li>
+                            <li><i class="fas fa-check"></i> Document Verification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fee Structure -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Fee Structure</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="fee-table table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Grade Level</th>
+                                    <th>Admission Fee</th>
+                                    <th>Monthly Fee</th>
+                                    <th>Annual Charges</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Montessori</td>
+                                    <td>Rs. 25,000</td>
+                                    <td>Rs. 8,000</td>
+                                    <td>Rs. 15,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Primary (1-5)</td>
+                                    <td>Rs. 30,000</td>
+                                    <td>Rs. 10,000</td>
+                                    <td>Rs. 20,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Secondary (6-10)</td>
+                                    <td>Rs. 35,000</td>
+                                    <td>Rs. 12,000</td>
+                                    <td>Rs. 25,000</td>
+                                </tr>
+                                <tr>
+                                    <td>O/A Levels</td>
+                                    <td>Rs. 40,000</td>
+                                    <td>Rs. 15,000</td>
+                                    <td>Rs. 30,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Application Form -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Online Application Form</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="application-form">
+                        <form id="admissionForm">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Student's Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Father's Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Mother's Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Grade Applying For</label>
+                                <select class="form-select" required>
+                                    <option value="">Select Grade</option>
+                                    <option>Montessori</option>
+                                    <option>Grade 1</option>
+                                    <option>Grade 2</option>
+                                    <!-- Add more options -->
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contact Number</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Previous School (if any)</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Upload Documents</label>
+                                <input type="file" class="form-control" multiple>
+                                <small class="text-muted">Upload B-Form, Previous Result Cards, School Leaving Certificate</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Timeline -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Admission Timeline</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">January 15 - February 28</div>
+                            <h5>Application Submission</h5>
+                            <p>Online application portal opens for all grades</p>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">March 10 - March 20</div>
+                            <h5>Entrance Tests</h5>
+                            <p>Schedule will be communicated via email</p>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">March 25 - April 5</div>
+                            <h5>Interviews</h5>
+                            <p>For shortlisted candidates</p>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-date">April 10</div>
+                            <h5>Final Results</h5>
+                            <p>Admission confirmation and fee submission</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, City</p>
+                    <p><i class="fas fa-phone"></i> (021) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> admissions@vpsc.edu.pk</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/about" class="text-white">About Us</a></li>
+                        <li><a href="/academics" class="text-white">Academic Programs</a></li>
+                        <li><a href="/admissions" class="text-white">Admissions</a></li>
+                        <li><a href="/contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">© 2024 Vanguard Public School & College. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Form submission handling
+        document.getElementById('admissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for submitting your application. We will contact you shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

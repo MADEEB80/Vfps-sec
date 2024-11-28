@@ -1,0 +1,351 @@
+<html><head><base href="/about"><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Vanguard Public School & College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a4b84;
+            --secondary-color: #e63946;
+            --accent-color: #f1faee;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+            padding: 1rem;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .page-header {
+            background: linear-gradient(rgba(26,75,132,0.9), rgba(26,75,132,0.9)),
+                        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3') center/cover;
+            color: white;
+            padding: 100px 0 50px;
+            text-align: center;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 50px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            position: relative;
+            width: calc(50% - 30px);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            float: left;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            float: right;
+        }
+
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::after {
+            right: -40px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -40px;
+        }
+
+        .values-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+
+        .values-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .values-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 3rem 0;
+        }
+
+        .social-links a {
+            color: white;
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">VPSC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/academics.html">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4">About VPSC</h1>
+            <p class="lead">Shaping Tomorrow's Leaders Today</p>
+        </div>
+    </header>
+
+    <!-- Mission & Vision -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <h2 class="section-title">Our Mission</h2>
+                    <p>To provide quality education that nurtures intellectual curiosity, promotes academic excellence, and develops well-rounded individuals who are prepared to meet the challenges of tomorrow. We strive to create an environment that fosters creativity, critical thinking, and character development.</p>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-left">
+                    <h2 class="section-title">Our Vision</h2>
+                    <p>To be recognized as a leading educational institution that sets new standards in academic excellence and holistic development. We envision our students as future leaders who will make positive contributions to society through their knowledge, skills, and values.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Timeline -->
+    <section class="timeline py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Journey</h2>
+            <div class="timeline-container">
+                <div class="timeline-item clearfix" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h4>1995</h4>
+                        <p>Establishment of VPSC with a vision to provide quality education</p>
+                    </div>
+                </div>
+                <div class="timeline-item clearfix" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h4>2000</h4>
+                        <p>Expansion to include secondary education</p>
+                    </div>
+                </div>
+                <div class="timeline-item clearfix" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h4>2005</h4>
+                        <p>Introduction of O/A Level programs</p>
+                    </div>
+                </div>
+                <div class="timeline-item clearfix" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h4>2020</h4>
+                        <p>Modernization of facilities and digital integration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="values-card text-center">
+                        <i class="fas fa-brain values-icon"></i>
+                        <h4>Excellence</h4>
+                        <p>Striving for the highest standards in everything we do</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="values-card text-center">
+                        <i class="fas fa-handshake values-icon"></i>
+                        <h4>Integrity</h4>
+                        <p>Upholding moral and ethical principles in all actions</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="values-card text-center">
+                        <i class="fas fa-users values-icon"></i>
+                        <h4>Community</h4>
+                        <p>Fostering a supportive and inclusive learning environment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Leadership</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3" alt="Principal">
+                        <h4>Dr. Sarah Ahmed</h4>
+                        <p class="text-muted">Principal</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3" alt="Academic Director">
+                        <h4>Mr. Ali Hassan</h4>
+                        <p class="text-muted">Academic Director</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3" alt="Admin Head">
+                        <h4>Ms. Fatima Khan</h4>
+                        <p class="text-muted">Administrative Head</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, City</p>
+                    <p><i class="fas fa-phone"></i> (021) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@vpsc.edu.pk</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/about" class="text-white">About Us</a></li>
+                        <li><a href="/academics" class="text-white">Academic Programs</a></li>
+                        <li><a href="/admissions" class="text-white">Admissions</a></li>
+                        <li><a href="/contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">© 2024 Vanguard Public School & College. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
